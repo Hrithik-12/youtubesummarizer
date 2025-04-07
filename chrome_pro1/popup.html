@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Summarizer</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Logo">
+            <h1>YouTube Summarizer</h1>
+        </div>
+        
+        <input type="text" id="video-url" readonly>
+        <button id="summarize-btn">Summarize Video</button>
+
+        <div id="loading-spinner">
+            <div class="spinner"></div>
+            <p>Generating summary...</p>
+        </div>
+
+        <div class="summary-container">
+            <div id="summary-result"></div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
