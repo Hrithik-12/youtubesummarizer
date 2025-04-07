@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 async function summarizeText(text) {
     try {
         console.log("Starting summarization with Gemini...");
-        const GEMINI_API_KEY = 'AIzaSyA2baTvndDumtuchris-95NKww0QZcoZIM';
+        const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
         
         const maxLength = 30000; // Gemini can handle longer texts
         const truncatedText = text.length > maxLength ? text.substring(0, maxLength) : text;
